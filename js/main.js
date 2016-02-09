@@ -1,6 +1,6 @@
 var chartContainerId = "chartContainer";
 
-d3.select(window).on("resize", throttle);
+//d3.select(window).on("resize", throttle);
 
 var zoom = d3.behavior.zoom()
     .scaleExtent([1, 8])
@@ -55,17 +55,22 @@ function setQuestionData( d ){
     question = d;
 }
 
-//
-//function addQuestionDataToCountries( data ){
-//
-//    for (var i = 0; i < data.length; i++ ){
-//        d3.select( document.getElementById( data[i].Country ) )
-//            .style( "fill", "#4BBA52")
-//            .attr( "test", function( data, i ) { return data[i].Country; });
-//        console.log(data[i].Country);
-//
-//    }
-//}
+
+function addQuestionDataToCountries( ){
+
+    for( var k = 1; k < question.length; k++ ){
+        var tempSelector = "#" + question[k].country;
+        //console.log( question[k].country );
+        var current = g.select( tempSelector );
+        //console.log( question[k] );
+        current.attr("q-data", function (){
+            //console.log(question[k]);
+            return question[k].poverty
+        })
+            .style( "fill", "#4BBA52");
+            //.attr( "attrib", "hej" );
+    }
+}
 
 function draw( topo ) {
 
@@ -74,20 +79,10 @@ function draw( topo ) {
     country.enter().insert("path")
         .attr("class", "country")
         .attr("d", path)
-        .attr("id", function( d ) { return d.properties.name; })
-        .attr("test", function ( d, question )
-        {
-            console.log(question);
-            for( var i = 0; i < question.length; i++ ){
-                //console.log(d.properties.name, question[i].Country);
-                //if( d.properties.name == question[i].Country ){
-                //    console.log("hej");
-                //    return (d.properties.name);
-                //}
-            }
-        });
-            //if(d.properties.name === question.)})
+        .attr("id", function( d ) { return d.properties.name; });
     //.style("fill", function(d, i) { return d.properties.color; });
+
+    addQuestionDataToCountries();
 
     //offsets plus width/height of transform, plus 20 px of padding, plus 20 extra for tooltip offset off mouse
     var offsetL = document.getElementById(chartContainerId).offsetLeft+(width/2)+20;
@@ -96,7 +91,7 @@ function draw( topo ) {
     //tooltips
     country
         .on("mouseenter", function(d){
-            tooltip.classed("hidden", false).html(d.properties.name);
+            tooltip.classed("hidden", false).html(d.properties.name + " " + this.getAttribute( "q-data" ));
         })
         .on("mousemove",function() {
             var mouse = d3.mouse(svg.node()).map( function(d) { return parseInt(d); } );

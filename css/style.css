@@ -18,8 +18,8 @@ path.country{
 }
 
 .country:hover{
-    fill: #c3c3c3;
-    stroke: #fff;
+    fill: #c3c3c3 !important;
+    stroke: none;
     /*stroke-width: .7px;*/
 }
 

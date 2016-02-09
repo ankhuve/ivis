@@ -1,490 +1,490 @@
 [
   {
-    "Country":"",
-    "People living in poverty and need":"55,7",
-    "Discrimination against girls and women":"8,2",
-    "Poor sanitation and infectious diseases":"10,6",
-    "Inadequate education":"11,5",
-    "Environmental pollution":"12,8"
+    "country":"",
+    "poverty":"55,7",
+    "discrimination":"8,2",
+    "sanitation":"10,6",
+    "education":"11,5",
+    "pollution":"12,8"
   },
   {
-    "Country":"Algeria",
-    "People living in poverty and need":"50,7",
-    "Discrimination against girls and women":"9,6",
-    "Poor sanitation and infectious diseases":"16,6",
-    "Inadequate education":"8,8",
-    "Environmental pollution":"10,9"
+    "country":"Algeria",
+    "poverty":"50,7",
+    "discrimination":"9,6",
+    "sanitation":"16,6",
+    "education":"8,8",
+    "pollution":"10,9"
   },
   {
-    "Country":"Azerbaijan",
-    "People living in poverty and need":"52,8",
-    "Discrimination against girls and women":"11,7",
-    "Poor sanitation and infectious diseases":"11,3",
-    "Inadequate education":"15,6",
-    "Environmental pollution":"7,8"
+    "country":"Azerbaijan",
+    "poverty":"52,8",
+    "discrimination":"11,7",
+    "sanitation":"11,3",
+    "education":"15,6",
+    "pollution":"7,8"
   },
   {
-    "Country":"Argentina",
-    "People living in poverty and need":"59,3",
-    "Discrimination against girls and women":"8,3",
-    "Poor sanitation and infectious diseases":"3,6",
-    "Inadequate education":"18,8",
-    "Environmental pollution":"9,1"
+    "country":"Argentina",
+    "poverty":"59,3",
+    "discrimination":"8,3",
+    "sanitation":"3,6",
+    "education":"18,8",
+    "pollution":"9,1"
   },
   {
-    "Country":"Australia",
-    "People living in poverty and need":"61,6",
-    "Discrimination against girls and women":"4,2",
-    "Poor sanitation and infectious diseases":"10,3",
-    "Inadequate education":"12,1",
-    "Environmental pollution":"11,5"
+    "country":"Australia",
+    "poverty":"61,6",
+    "discrimination":"4,2",
+    "sanitation":"10,3",
+    "education":"12,1",
+    "pollution":"11,5"
   },
   {
-    "Country":"Bahrain",
-    "People living in poverty and need":"22,9",
-    "Discrimination against girls and women":"25,3",
-    "Poor sanitation and infectious diseases":"32,8",
-    "Inadequate education":"13,3",
-    "Environmental pollution":"3,3"
+    "country":"Bahrain",
+    "poverty":"22,9",
+    "discrimination":"25,3",
+    "sanitation":"32,8",
+    "education":"13,3",
+    "pollution":"3,3"
   },
   {
-    "Country":"Armenia",
-    "People living in poverty and need":"74,7",
-    "Discrimination against girls and women":"2,1",
-    "Poor sanitation and infectious diseases":"7,1",
-    "Inadequate education":"3,1",
-    "Environmental pollution":"10,6"
+    "country":"Armenia",
+    "poverty":"74,7",
+    "discrimination":"2,1",
+    "sanitation":"7,1",
+    "education":"3,1",
+    "pollution":"10,6"
   },
   {
-    "Country":"Brazil",
-    "People living in poverty and need":"59,2",
-    "Discrimination against girls and women":"10,1",
-    "Poor sanitation and infectious diseases":"10,5",
-    "Inadequate education":"14",
-    "Environmental pollution":"5,8"
+    "country":"Brazil",
+    "poverty":"59,2",
+    "discrimination":"10,1",
+    "sanitation":"10,5",
+    "education":"14",
+    "pollution":"5,8"
   },
   {
-    "Country":"Belarus",
-    "People living in poverty and need":"61,5",
-    "Discrimination against girls and women":"3,3",
-    "Poor sanitation and infectious diseases":"10,3",
-    "Inadequate education":"3,1",
-    "Environmental pollution":"21,3"
+    "country":"Belarus",
+    "poverty":"61,5",
+    "discrimination":"3,3",
+    "sanitation":"10,3",
+    "education":"3,1",
+    "pollution":"21,3"
   },
   {
-    "Country":"Chile",
-    "People living in poverty and need":"61,2",
-    "Discrimination against girls and women":"5,9",
-    "Poor sanitation and infectious diseases":"5,5",
-    "Inadequate education":"21",
-    "Environmental pollution":"5,8"
+    "country":"Chile",
+    "poverty":"61,2",
+    "discrimination":"5,9",
+    "sanitation":"5,5",
+    "education":"21",
+    "pollution":"5,8"
   },
   {
-    "Country":"China",
-    "People living in poverty and need":"42,5",
-    "Discrimination against girls and women":"5,1",
-    "Poor sanitation and infectious diseases":"8,5",
-    "Inadequate education":"12,1",
-    "Environmental pollution":"21,6"
+    "country":"China",
+    "poverty":"42,5",
+    "discrimination":"5,1",
+    "sanitation":"8,5",
+    "education":"12,1",
+    "pollution":"21,6"
   },
   {
-    "Country":"Taiwan",
-    "People living in poverty and need":"39,9",
-    "Discrimination against girls and women":"3,5",
-    "Poor sanitation and infectious diseases":"10,4",
-    "Inadequate education":"6,1",
-    "Environmental pollution":"36,2"
+    "country":"Taiwan",
+    "poverty":"39,9",
+    "discrimination":"3,5",
+    "sanitation":"10,4",
+    "education":"6,1",
+    "pollution":"36,2"
   },
   {
-    "Country":"Colombia",
-    "People living in poverty and need":"56,8",
-    "Discrimination against girls and women":"14",
-    "Poor sanitation and infectious diseases":"2,1",
-    "Inadequate education":"13,6",
-    "Environmental pollution":"13,5"
+    "country":"Colombia",
+    "poverty":"56,8",
+    "discrimination":"14",
+    "sanitation":"2,1",
+    "education":"13,6",
+    "pollution":"13,5"
   },
   {
-    "Country":"Cyprus",
-    "People living in poverty and need":"57,3",
-    "Discrimination against girls and women":"6,3",
-    "Poor sanitation and infectious diseases":"18,7",
-    "Inadequate education":"5,8",
-    "Environmental pollution":"11,9"
+    "country":"Cyprus",
+    "poverty":"57,3",
+    "discrimination":"6,3",
+    "sanitation":"18,7",
+    "education":"5,8",
+    "pollution":"11,9"
   },
   {
-    "Country":"Ecuador",
-    "People living in poverty and need":"43",
-    "Discrimination against girls and women":"8,8",
-    "Poor sanitation and infectious diseases":"6,9",
-    "Inadequate education":"18",
-    "Environmental pollution":"23,1"
+    "country":"Ecuador",
+    "poverty":"43",
+    "discrimination":"8,8",
+    "sanitation":"6,9",
+    "education":"18",
+    "pollution":"23,1"
   },
   {
-    "Country":"Estonia",
-    "People living in poverty and need":"60,3",
-    "Discrimination against girls and women":"2,8",
-    "Poor sanitation and infectious diseases":"10",
-    "Inadequate education":"5,9",
-    "Environmental pollution":"20,2"
+    "country":"Estonia",
+    "poverty":"60,3",
+    "discrimination":"2,8",
+    "sanitation":"10",
+    "education":"5,9",
+    "pollution":"20,2"
   },
   {
-    "Country":"Georgia",
-    "People living in poverty and need":"73,1",
-    "Discrimination against girls and women":"5,2",
-    "Poor sanitation and infectious diseases":"8,2",
-    "Inadequate education":"4,7",
-    "Environmental pollution":"7,7"
+    "country":"Georgia",
+    "poverty":"73,1",
+    "discrimination":"5,2",
+    "sanitation":"8,2",
+    "education":"4,7",
+    "pollution":"7,7"
   },
   {
-    "Country":"Palestine",
-    "People living in poverty and need":"68,9",
-    "Discrimination against girls and women":"5,4",
-    "Poor sanitation and infectious diseases":"6,7",
-    "Inadequate education":"8,4",
-    "Environmental pollution":"9,7"
+    "country":"Palestine",
+    "poverty":"68,9",
+    "discrimination":"5,4",
+    "sanitation":"6,7",
+    "education":"8,4",
+    "pollution":"9,7"
   },
   {
-    "Country":"Germany",
-    "People living in poverty and need":"55,8",
-    "Discrimination against girls and women":"7,6",
-    "Poor sanitation and infectious diseases":"6,5",
-    "Inadequate education":"19,3",
-    "Environmental pollution":"10,3"
+    "country":"Germany",
+    "poverty":"55,8",
+    "discrimination":"7,6",
+    "sanitation":"6,5",
+    "education":"19,3",
+    "pollution":"10,3"
   },
   {
-    "Country":"Ghana",
-    "People living in poverty and need":"58,5",
-    "Discrimination against girls and women":"6",
-    "Poor sanitation and infectious diseases":"14,2",
-    "Inadequate education":"16,8",
-    "Environmental pollution":"4,5"
+    "country":"Ghana",
+    "poverty":"58,5",
+    "discrimination":"6",
+    "sanitation":"14,2",
+    "education":"16,8",
+    "pollution":"4,5"
   },
   {
-    "Country":"Hong Kong",
-    "People living in poverty and need":"35,3",
-    "Discrimination against girls and women":"5",
-    "Poor sanitation and infectious diseases":"21,6",
-    "Inadequate education":"12,1",
-    "Environmental pollution":"25,6"
+    "country":"Hong Kong",
+    "poverty":"35,3",
+    "discrimination":"5",
+    "sanitation":"21,6",
+    "education":"12,1",
+    "pollution":"25,6"
   },
   {
-    "Country":"India",
-    "People living in poverty and need":"52,4",
-    "Discrimination against girls and women":"17,9",
-    "Poor sanitation and infectious diseases":"6,1",
-    "Inadequate education":"13,7",
-    "Environmental pollution":"9,4"
+    "country":"India",
+    "poverty":"52,4",
+    "discrimination":"17,9",
+    "sanitation":"6,1",
+    "education":"13,7",
+    "pollution":"9,4"
   },
   {
-    "Country":"Iraq",
-    "People living in poverty and need":"60,8",
-    "Discrimination against girls and women":"5,8",
-    "Poor sanitation and infectious diseases":"7,5",
-    "Inadequate education":"12,8",
-    "Environmental pollution":"12,2"
+    "country":"Iraq",
+    "poverty":"60,8",
+    "discrimination":"5,8",
+    "sanitation":"7,5",
+    "education":"12,8",
+    "pollution":"12,2"
   },
   {
-    "Country":"Japan",
-    "People living in poverty and need":"36,6",
-    "Discrimination against girls and women":"0,7",
-    "Poor sanitation and infectious diseases":"7,2",
-    "Inadequate education":"8,1",
-    "Environmental pollution":"41,3"
+    "country":"Japan",
+    "poverty":"36,6",
+    "discrimination":"0,7",
+    "sanitation":"7,2",
+    "education":"8,1",
+    "pollution":"41,3"
   },
   {
-    "Country":"Kazakhstan",
-    "People living in poverty and need":"62,6",
-    "Discrimination against girls and women":"3,4",
-    "Poor sanitation and infectious diseases":"11,8",
-    "Inadequate education":"8",
-    "Environmental pollution":"14,2"
+    "country":"Kazakhstan",
+    "poverty":"62,6",
+    "discrimination":"3,4",
+    "sanitation":"11,8",
+    "education":"8",
+    "pollution":"14,2"
   },
   {
-    "Country":"Jordan",
-    "People living in poverty and need":"80,7",
-    "Discrimination against girls and women":"2,5",
-    "Poor sanitation and infectious diseases":"5,2",
-    "Inadequate education":"7",
-    "Environmental pollution":"4,2"
+    "country":"Jordan",
+    "poverty":"80,7",
+    "discrimination":"2,5",
+    "sanitation":"5,2",
+    "education":"7",
+    "pollution":"4,2"
   },
   {
-    "Country":"South Korea",
-    "People living in poverty and need":"42,3",
-    "Discrimination against girls and women":"6,3",
-    "Poor sanitation and infectious diseases":"7,4",
-    "Inadequate education":"4",
-    "Environmental pollution":"39,5"
+    "country":"South Korea",
+    "poverty":"42,3",
+    "discrimination":"6,3",
+    "sanitation":"7,4",
+    "education":"4",
+    "pollution":"39,5"
   },
   {
-    "Country":"Kuwait",
-    "People living in poverty and need":"49,1",
-    "Discrimination against girls and women":"5,4",
-    "Poor sanitation and infectious diseases":"13,3",
-    "Inadequate education":"21,7",
-    "Environmental pollution":"7,3"
+    "country":"Kuwait",
+    "poverty":"49,1",
+    "discrimination":"5,4",
+    "sanitation":"13,3",
+    "education":"21,7",
+    "pollution":"7,3"
   },
   {
-    "Country":"Kyrgyzstan",
-    "People living in poverty and need":"54",
-    "Discrimination against girls and women":"11,6",
-    "Poor sanitation and infectious diseases":"13,4",
-    "Inadequate education":"8,7",
-    "Environmental pollution":"12,3"
+    "country":"Kyrgyzstan",
+    "poverty":"54",
+    "discrimination":"11,6",
+    "sanitation":"13,4",
+    "education":"8,7",
+    "pollution":"12,3"
   },
   {
-    "Country":"Lebanon",
-    "People living in poverty and need":"48",
-    "Discrimination against girls and women":"7,2",
-    "Poor sanitation and infectious diseases":"17",
-    "Inadequate education":"15,2",
-    "Environmental pollution":"11,5"
+    "country":"Lebanon",
+    "poverty":"48",
+    "discrimination":"7,2",
+    "sanitation":"17",
+    "education":"15,2",
+    "pollution":"11,5"
   },
   {
-    "Country":"Libya",
-    "People living in poverty and need":"29,2",
-    "Discrimination against girls and women":"3,7",
-    "Poor sanitation and infectious diseases":"28",
-    "Inadequate education":"26,5",
-    "Environmental pollution":"11"
+    "country":"Libya",
+    "poverty":"29,2",
+    "discrimination":"3,7",
+    "sanitation":"28",
+    "education":"26,5",
+    "pollution":"11"
   },
   {
-    "Country":"Malaysia",
-    "People living in poverty and need":"44,1",
-    "Discrimination against girls and women":"10,9",
-    "Poor sanitation and infectious diseases":"12,4",
-    "Inadequate education":"16,2",
-    "Environmental pollution":"16,5"
+    "country":"Malaysia",
+    "poverty":"44,1",
+    "discrimination":"10,9",
+    "sanitation":"12,4",
+    "education":"16,2",
+    "pollution":"16,5"
   },
   {
-    "Country":"Mexico",
-    "People living in poverty and need":"44,4",
-    "Discrimination against girls and women":"14,1",
-    "Poor sanitation and infectious diseases":"5",
-    "Inadequate education":"15,4",
-    "Environmental pollution":"20,3"
+    "country":"Mexico",
+    "poverty":"44,4",
+    "discrimination":"14,1",
+    "sanitation":"5",
+    "education":"15,4",
+    "pollution":"20,3"
   },
   {
-    "Country":"Morocco",
-    "People living in poverty and need":"62",
-    "Discrimination against girls and women":"5,6",
-    "Poor sanitation and infectious diseases":"6,5",
-    "Inadequate education":"17,6",
-    "Environmental pollution":"6,9"
+    "country":"Morocco",
+    "poverty":"62",
+    "discrimination":"5,6",
+    "sanitation":"6,5",
+    "education":"17,6",
+    "pollution":"6,9"
   },
   {
-    "Country":"Netherlands",
-    "People living in poverty and need":"64,2",
-    "Discrimination against girls and women":"11,6",
-    "Poor sanitation and infectious diseases":"7,8",
-    "Inadequate education":"5,6",
-    "Environmental pollution":"10,3"
+    "country":"Netherlands",
+    "poverty":"64,2",
+    "discrimination":"11,6",
+    "sanitation":"7,8",
+    "education":"5,6",
+    "pollution":"10,3"
   },
   {
-    "Country":"New Zealand",
-    "People living in poverty and need":"53,4",
-    "Discrimination against girls and women":"3,2",
-    "Poor sanitation and infectious diseases":"9",
-    "Inadequate education":"15,5",
-    "Environmental pollution":"14"
+    "country":"New Zealand",
+    "poverty":"53,4",
+    "discrimination":"3,2",
+    "sanitation":"9",
+    "education":"15,5",
+    "pollution":"14"
   },
   {
-    "Country":"Nigeria",
-    "People living in poverty and need":"79,9",
-    "Discrimination against girls and women":"8,2",
-    "Poor sanitation and infectious diseases":"5,3",
-    "Inadequate education":"5,4",
-    "Environmental pollution":"1,2"
+    "country":"Nigeria",
+    "poverty":"79,9",
+    "discrimination":"8,2",
+    "sanitation":"5,3",
+    "education":"5,4",
+    "pollution":"1,2"
   },
   {
-    "Country":"Pakistan",
-    "People living in poverty and need":"62,6",
-    "Discrimination against girls and women":"20,5",
-    "Poor sanitation and infectious diseases":"7,8",
-    "Inadequate education":"8,6",
-    "Environmental pollution":"0,4"
+    "country":"Pakistan",
+    "poverty":"62,6",
+    "discrimination":"20,5",
+    "sanitation":"7,8",
+    "education":"8,6",
+    "pollution":"0,4"
   },
   {
-    "Country":"Peru",
-    "People living in poverty and need":"48",
-    "Discrimination against girls and women":"7,4",
-    "Poor sanitation and infectious diseases":"3,8",
-    "Inadequate education":"22,1",
-    "Environmental pollution":"18"
+    "country":"Peru",
+    "poverty":"48",
+    "discrimination":"7,4",
+    "sanitation":"3,8",
+    "education":"22,1",
+    "pollution":"18"
   },
   {
-    "Country":"Philippines",
-    "People living in poverty and need":"54,8",
-    "Discrimination against girls and women":"5,5",
-    "Poor sanitation and infectious diseases":"9,8",
-    "Inadequate education":"13,5",
-    "Environmental pollution":"16,3"
+    "country":"Philippines",
+    "poverty":"54,8",
+    "discrimination":"5,5",
+    "sanitation":"9,8",
+    "education":"13,5",
+    "pollution":"16,3"
   },
   {
-    "Country":"Poland",
-    "People living in poverty and need":"76,5",
-    "Discrimination against girls and women":"2,7",
-    "Poor sanitation and infectious diseases":"4,3",
-    "Inadequate education":"4,2",
-    "Environmental pollution":"11,1"
+    "country":"Poland",
+    "poverty":"76,5",
+    "discrimination":"2,7",
+    "sanitation":"4,3",
+    "education":"4,2",
+    "pollution":"11,1"
   },
   {
-    "Country":"Qatar",
-    "People living in poverty and need":"52,8",
-    "Discrimination against girls and women":"2,6",
-    "Poor sanitation and infectious diseases":"17,2",
-    "Inadequate education":"8,3",
-    "Environmental pollution":"18,8"
+    "country":"Qatar",
+    "poverty":"52,8",
+    "discrimination":"2,6",
+    "sanitation":"17,2",
+    "education":"8,3",
+    "pollution":"18,8"
   },
   {
-    "Country":"Romania",
-    "People living in poverty and need":"52",
-    "Discrimination against girls and women":"7",
-    "Poor sanitation and infectious diseases":"13,7",
-    "Inadequate education":"17,3",
-    "Environmental pollution":"8,7"
+    "country":"Romania",
+    "poverty":"52",
+    "discrimination":"7",
+    "sanitation":"13,7",
+    "education":"17,3",
+    "pollution":"8,7"
   },
   {
-    "Country":"Russia",
-    "People living in poverty and need":"55,7",
-    "Discrimination against girls and women":"3,7",
-    "Poor sanitation and infectious diseases":"9,9",
-    "Inadequate education":"5,3",
-    "Environmental pollution":"22,7"
+    "country":"Russia",
+    "poverty":"55,7",
+    "discrimination":"3,7",
+    "sanitation":"9,9",
+    "education":"5,3",
+    "pollution":"22,7"
   },
   {
-    "Country":"Rwanda",
-    "People living in poverty and need":"60,4",
-    "Discrimination against girls and women":"14,2",
-    "Poor sanitation and infectious diseases":"19,3",
-    "Inadequate education":"3,3",
-    "Environmental pollution":"2,8"
+    "country":"Rwanda",
+    "poverty":"60,4",
+    "discrimination":"14,2",
+    "sanitation":"19,3",
+    "education":"3,3",
+    "pollution":"2,8"
   },
   {
-    "Country":"Singapore",
-    "People living in poverty and need":"53,5",
-    "Discrimination against girls and women":"11,1",
-    "Poor sanitation and infectious diseases":"15,3",
-    "Inadequate education":"7,9",
-    "Environmental pollution":"12,1"
+    "country":"Singapore",
+    "poverty":"53,5",
+    "discrimination":"11,1",
+    "sanitation":"15,3",
+    "education":"7,9",
+    "pollution":"12,1"
   },
   {
-    "Country":"Slovenia",
-    "People living in poverty and need":"68,4",
-    "Discrimination against girls and women":"3,3",
-    "Poor sanitation and infectious diseases":"4,3",
-    "Inadequate education":"4,3",
-    "Environmental pollution":"17,9"
+    "country":"Slovenia",
+    "poverty":"68,4",
+    "discrimination":"3,3",
+    "sanitation":"4,3",
+    "education":"4,3",
+    "pollution":"17,9"
   },
   {
-    "Country":"South Africa",
-    "People living in poverty and need":"57,4",
-    "Discrimination against girls and women":"17,3",
-    "Poor sanitation and infectious diseases":"12,7",
-    "Inadequate education":"8,8",
-    "Environmental pollution":"3,8"
+    "country":"South Africa",
+    "poverty":"57,4",
+    "discrimination":"17,3",
+    "sanitation":"12,7",
+    "education":"8,8",
+    "pollution":"3,8"
   },
   {
-    "Country":"Zimbabwe",
-    "People living in poverty and need":"57,4",
-    "Discrimination against girls and women":"8,1",
-    "Poor sanitation and infectious diseases":"20,6",
-    "Inadequate education":"11,1",
-    "Environmental pollution":"2,8"
+    "country":"Zimbabwe",
+    "poverty":"57,4",
+    "discrimination":"8,1",
+    "sanitation":"20,6",
+    "education":"11,1",
+    "pollution":"2,8"
   },
   {
-    "Country":"Spain",
-    "People living in poverty and need":"71,6",
-    "Discrimination against girls and women":"8,4",
-    "Poor sanitation and infectious diseases":"6,1",
-    "Inadequate education":"8,7",
-    "Environmental pollution":"5,2"
+    "country":"Spain",
+    "poverty":"71,6",
+    "discrimination":"8,4",
+    "sanitation":"6,1",
+    "education":"8,7",
+    "pollution":"5,2"
   },
   {
-    "Country":"Sweden",
-    "People living in poverty and need":"55,1",
-    "Discrimination against girls and women":"9",
-    "Poor sanitation and infectious diseases":"7,9",
-    "Inadequate education":"6,7",
-    "Environmental pollution":"20,3"
+    "country":"Sweden",
+    "poverty":"55,1",
+    "discrimination":"9",
+    "sanitation":"7,9",
+    "education":"6,7",
+    "pollution":"20,3"
   },
   {
-    "Country":"Thailand",
-    "People living in poverty and need":"46,8",
-    "Discrimination against girls and women":"11,8",
-    "Poor sanitation and infectious diseases":"11,9",
-    "Inadequate education":"12,4",
-    "Environmental pollution":"16,9"
+    "country":"Thailand",
+    "poverty":"46,8",
+    "discrimination":"11,8",
+    "sanitation":"11,9",
+    "education":"12,4",
+    "pollution":"16,9"
   },
   {
-    "Country":"Trinidad and Tobago",
-    "People living in poverty and need":"59,2",
-    "Discrimination against girls and women":"7,7",
-    "Poor sanitation and infectious diseases":"10,1",
-    "Inadequate education":"11,5",
-    "Environmental pollution":"10,9"
+    "country":"Trinidad and Tobago",
+    "poverty":"59,2",
+    "discrimination":"7,7",
+    "sanitation":"10,1",
+    "education":"11,5",
+    "pollution":"10,9"
   },
   {
-    "Country":"Tunisia",
-    "People living in poverty and need":"84,6",
-    "Discrimination against girls and women":"1,9",
-    "Poor sanitation and infectious diseases":"3,2",
-    "Inadequate education":"5,6",
-    "Environmental pollution":"4,1"
+    "country":"Tunisia",
+    "poverty":"84,6",
+    "discrimination":"1,9",
+    "sanitation":"3,2",
+    "education":"5,6",
+    "pollution":"4,1"
   },
   {
-    "Country":"Turkey",
-    "People living in poverty and need":"51,6",
-    "Discrimination against girls and women":"12",
-    "Poor sanitation and infectious diseases":"7,6",
-    "Inadequate education":"22,8",
-    "Environmental pollution":"4,1"
+    "country":"Turkey",
+    "poverty":"51,6",
+    "discrimination":"12",
+    "sanitation":"7,6",
+    "education":"22,8",
+    "pollution":"4,1"
   },
   {
-    "Country":"Ukraine",
-    "People living in poverty and need":"63,4",
-    "Discrimination against girls and women":"3,3",
-    "Poor sanitation and infectious diseases":"12,1",
-    "Inadequate education":"2,3",
-    "Environmental pollution":"19"
+    "country":"Ukraine",
+    "poverty":"63,4",
+    "discrimination":"3,3",
+    "sanitation":"12,1",
+    "education":"2,3",
+    "pollution":"19"
   },
   {
-    "Country":"Egypt",
-    "People living in poverty and need":"81,5",
-    "Discrimination against girls and women":"2,2",
-    "Poor sanitation and infectious diseases":"5,9",
-    "Inadequate education":"8,1",
-    "Environmental pollution":"2,2"
+    "country":"Egypt",
+    "poverty":"81,5",
+    "discrimination":"2,2",
+    "sanitation":"5,9",
+    "education":"8,1",
+    "pollution":"2,2"
   },
   {
-    "Country":"United States",
-    "People living in poverty and need":"53,1",
-    "Discrimination against girls and women":"4",
-    "Poor sanitation and infectious diseases":"13",
-    "Inadequate education":"18,9",
-    "Environmental pollution":"9,9"
+    "country":"United States",
+    "poverty":"53,1",
+    "discrimination":"4",
+    "sanitation":"13",
+    "education":"18,9",
+    "pollution":"9,9"
   },
   {
-    "Country":"Uruguay",
-    "People living in poverty and need":"56,9",
-    "Discrimination against girls and women":"12,7",
-    "Poor sanitation and infectious diseases":"5,2",
-    "Inadequate education":"14,7",
-    "Environmental pollution":"9,4"
+    "country":"Uruguay",
+    "poverty":"56,9",
+    "discrimination":"12,7",
+    "sanitation":"5,2",
+    "education":"14,7",
+    "pollution":"9,4"
   },
   {
-    "Country":"Uzbekistan",
-    "People living in poverty and need":"40,6",
-    "Discrimination against girls and women":"4,4",
-    "Poor sanitation and infectious diseases":"25",
-    "Inadequate education":"5,7",
-    "Environmental pollution":"21,8"
+    "country":"Uzbekistan",
+    "poverty":"40,6",
+    "discrimination":"4,4",
+    "sanitation":"25",
+    "education":"5,7",
+    "pollution":"21,8"
   },
   {
-    "Country":"Yemen",
-    "People living in poverty and need":"74,3",
-    "Discrimination against girls and women":"1,8",
-    "Poor sanitation and infectious diseases":"5,7",
-    "Inadequate education":"13,4",
-    "Environmental pollution":"3,6"
+    "country":"Yemen",
+    "poverty":"74,3",
+    "discrimination":"1,8",
+    "sanitation":"5,7",
+    "education":"13,4",
+    "pollution":"3,6"
   }
 ]
