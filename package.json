@@ -1,0 +1,15 @@
+{
+  "name": "ivisproj2",
+  "version": "1.0.0",
+  "description": "Assignment 2 in Information Visualization",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Erik Forsberg",
+  "license": "ISC",
+  "dependencies": {
+    "d3": "^3.5.14",
+    "topojson": "^1.6.22"
+  }
+}

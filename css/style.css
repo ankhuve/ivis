@@ -1,0 +1,44 @@
+#chartContainer{
+    /*margin: 0 0;*/
+    /*padding: 20px;*/
+    /*border:2px solid #d0d0d0;*/
+    /*border-radius: 5px;*/
+    /*height:100%;*/
+
+}
+
+body{
+    background: #2F2F2F;
+}
+
+path.country{
+    border: solid red 2px;
+    /*fill: #3e3e3e;*/
+    stroke: #ececec;
+}
+
+.country:hover{
+    fill: #c3c3c3;
+    stroke: #fff;
+    /*stroke-width: .7px;*/
+}
+
+.hidden {
+    display: none;
+}
+
+div.tooltip {
+    color: #e0e0e0;
+    font-size: 1.3rem;
+    font-family: "Helvetica Neue Light", "Lucida Grande", "Calibri", "Arial", sans-serif;
+    text-transform: uppercase;
+    background: #272727;
+    padding: .7rem;
+    /*text-shadow: #f5f5f5 0 1px 0;*/
+    /*border-radius: 2px;*/
+    /*box-shadow: 0px 0px 2px 0px #a6a6a6;*/
+    opacity: 0.9;
+    position: absolute;
+    /*top: 80%;*/
+    /*left: 100px;*/
+}
