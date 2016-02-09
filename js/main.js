@@ -91,7 +91,7 @@ function draw( topo ) {
     //tooltips
     country
         .on("mouseenter", function(d){
-            tooltip.classed("hidden", false).html(d.properties.name + " " + this.getAttribute( "q-data" ));
+            tooltip.classed("hidden", false).html(d.properties.name + " " + ( this.getAttribute( "q-data" ) ? this.getAttribute( "q-data" ) : "" ));
         })
         .on("mousemove",function() {
             var mouse = d3.mouse(svg.node()).map( function(d) { return parseInt(d); } );
