@@ -3,11 +3,11 @@ var chartContainerId = "chartContainer";
 //d3.select(window).on("resize", throttle);
 
 var zoom = d3.behavior.zoom()
-    .scaleExtent([1, 8])
+    .scaleExtent([1, 20])
     .on("zoom", move);
 
-var width = window.innerWidth-10;
-var height = window.innerHeight-10;
+var width = document.getElementById( "chartContainer" ).offsetWidth;
+var height = window.innerHeight-5;
 
 var topo,
     projection,
@@ -16,13 +16,14 @@ var topo,
     question,
     g;
 
-var tooltip = d3.select("#chartContainer").append("div").attr("class", "tooltip hidden");
+var tooltip = d3.select("#statContainer").append("h1").attr("class", "tooltip hidden").attr("id", "currentCountry");
+var valueContainer = d3.select("#statContainer").append("h2").attr("class", "tooltip hidden").attr("id", "questionValue");
 
 setup(width,height);
 
 function setup(width,height){
     projection = d3.geo.mercator()
-        .translate([0, 0])
+        .translate([0,-width/10])
         .scale(width / 2 / Math.PI);
 
     path = d3.geo.path()
@@ -32,43 +33,55 @@ function setup(width,height){
         .attr("width", width)
         .attr("height", height)
         .append("g")
-        .attr("transform", "translate(" + width / 2 + "," + height / 1.6 + ")")
+        .attr("transform", "translate(" + width / 2 + "," + height / 1.5 + ")")
         .call(zoom);
 
     g = svg.append("g");
 
-}
+    d3.json("data/world-topo.json", function(error, world) {
 
-d3.json("data/world-topo.json", function(error, world) {
+        var topo = topojson.feature(world, world.objects.countries).features;
 
-    var topo = topojson.feature(world, world.objects.countries).features;
-
-    d3.json("data/data.json", function(error, question) {
-        setQuestionData( question );
-        draw( topo );
+        d3.json("data/data.json", function(error, question) {
+            setQuestionData( question );
+            draw( topo );
+        });
     });
-
-
-});
+}
 
 function setQuestionData( d ){
     question = d;
 }
 
+var topValue = 0;
+var botValue = 100;
+var color;
+function createColorScale( ) {
+    for (var k = 1; k < question.length; k++) {
+        if (parseFloat(question[k].poverty.replace(",", ".")) > topValue) {
+            topValue = parseFloat(question[k].poverty.replace(",", "."));
+        } else {
+            if (parseFloat(question[k].poverty.replace(",", ".")) < botValue) {
+                botValue = parseFloat(question[k].poverty.replace(",", "."));
+            }
+        }
+    }
+    color = d3.scale.linear()
+        .domain( [botValue, topValue] )
+        .range( ["#B56A49", "#5dac57"] );
+}
 
 function addQuestionDataToCountries( ){
 
     for( var k = 1; k < question.length; k++ ){
-        var tempSelector = "#" + question[k].country;
-        //console.log( question[k].country );
-        var current = g.select( tempSelector );
-        //console.log( question[k] );
-        current.attr("q-data", function (){
-            //console.log(question[k]);
-            return question[k].poverty
-        })
-            .style( "fill", "#4BBA52");
-            //.attr( "attrib", "hej" );
+        topValue = parseFloat( question[k].poverty.replace( ",", "." ));
+        var tempSelector = "#" + question[k].country.replace( " ", "" );
+        var current = d3.selectAll( tempSelector );
+        current.attr("qData", function (){
+                return parseFloat( question[k].poverty.replace( ",", "." ) );
+            })
+            .style( "fill", function(){ return color(parseFloat( question[k].poverty.replace( ",", "." ))) })
+            .classed( "active", true );
     }
 }
 
@@ -79,47 +92,35 @@ function draw( topo ) {
     country.enter().insert("path")
         .attr("class", "country")
         .attr("d", path)
-        .attr("id", function( d ) { return d.properties.name; });
-    //.style("fill", function(d, i) { return d.properties.color; });
-
+        .attr("id", function( d ) { return d.properties.name.replace( " ", "" ); });
+    createColorScale();
     addQuestionDataToCountries();
 
     //offsets plus width/height of transform, plus 20 px of padding, plus 20 extra for tooltip offset off mouse
-    var offsetL = document.getElementById(chartContainerId).offsetLeft+(width/2)+20;
+    var offsetL = width / 2 + 20;
     var offsetT = document.getElementById(chartContainerId).offsetTop+(height/2)+140;
 
     //tooltips
     country
         .on("mouseenter", function(d){
-            tooltip.classed("hidden", false).html(d.properties.name + " " + ( this.getAttribute( "q-data" ) ? this.getAttribute( "q-data" ) : "" ));
-        })
-        .on("mousemove",function() {
-            var mouse = d3.mouse(svg.node()).map( function(d) { return parseInt(d); } );
+            if ( this.getAttribute( "qData" ) ){
 
-            if( mouse[0] > (window.innerWidth/2)-200 ){ // tooltip would go outside the window to the right
-                tooltip.attr("style", "left:"+(mouse[0]+offsetL-200)+"px;");
-            } else{
-                tooltip.attr("style", "left:"+(mouse[0]+offsetL)+"px;");
-            }
 
-            if( mouse[1] > (window.innerHeight/2)-200 ){ // tooltip would go outside the window at the bottom
-                tooltip.attr("style", tooltip.attr("style") + "top:"+(mouse[1]+offsetT-100)+"px;");
-            } else{
-                tooltip.attr("style", tooltip.attr("style") + "top:"+(mouse[1]+offsetT)+"px;");
+                tooltip.classed("hidden", false).html(d.properties.name);
+                valueContainer.classed("hidden", false);
+                valueContainer.html(( this.getAttribute( "qData" ) ? this.getAttribute( "qData" ) + " %" : "Country has no data" ));
+
             }
         })
         .on("mouseout",  function() {
-            tooltip.classed("hidden", true)
+            if ( !this.getAttribute( "qData" ) ){
+                valueContainer.attr( "class", "" );
+            }
+            tooltip.classed("hidden", true);
+            valueContainer.classed("hidden", true);
+
         });
 
-}
-
-function redraw() {
-    width = window.innerWidth-10;
-    height = window.innerHeight-10;
-    d3.select('svg').remove();
-    setup(width,height);
-    draw(topo);
 }
 
 function move() {
@@ -134,6 +135,15 @@ function move() {
     zoom.translate(t);
     g.style("stroke-width", 1 / s).attr("transform", "translate(" + t + ")scale(" + s + ")");
 
+}
+
+// for resizing
+function redraw() {
+    width = window.innerWidth-10;
+    height = window.innerHeight-10;
+    d3.select('svg').remove();
+    setup(width,height);
+    draw(topo);
 }
 
 var throttleTimer;

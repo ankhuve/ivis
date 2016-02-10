@@ -1,490 +1,246 @@
 [
   {
     "country":"",
-    "poverty":"55,7",
-    "discrimination":"8,2",
-    "sanitation":"10,6",
-    "education":"11,5",
-    "pollution":"12,8"
+    "poverty":"55,7"
   },
   {
     "country":"Algeria",
-    "poverty":"50,7",
-    "discrimination":"9,6",
-    "sanitation":"16,6",
-    "education":"8,8",
-    "pollution":"10,9"
+    "poverty":"50,7"
   },
   {
     "country":"Azerbaijan",
-    "poverty":"52,8",
-    "discrimination":"11,7",
-    "sanitation":"11,3",
-    "education":"15,6",
-    "pollution":"7,8"
+    "poverty":"52,8"
   },
   {
     "country":"Argentina",
-    "poverty":"59,3",
-    "discrimination":"8,3",
-    "sanitation":"3,6",
-    "education":"18,8",
-    "pollution":"9,1"
+    "poverty":"59,3"
   },
   {
     "country":"Australia",
-    "poverty":"61,6",
-    "discrimination":"4,2",
-    "sanitation":"10,3",
-    "education":"12,1",
-    "pollution":"11,5"
+    "poverty":"61,6"
   },
   {
     "country":"Bahrain",
-    "poverty":"22,9",
-    "discrimination":"25,3",
-    "sanitation":"32,8",
-    "education":"13,3",
-    "pollution":"3,3"
+    "poverty":"22,9"
   },
   {
     "country":"Armenia",
-    "poverty":"74,7",
-    "discrimination":"2,1",
-    "sanitation":"7,1",
-    "education":"3,1",
-    "pollution":"10,6"
+    "poverty":"74,7"
   },
   {
     "country":"Brazil",
-    "poverty":"59,2",
-    "discrimination":"10,1",
-    "sanitation":"10,5",
-    "education":"14",
-    "pollution":"5,8"
+    "poverty":"59,2"
   },
   {
     "country":"Belarus",
-    "poverty":"61,5",
-    "discrimination":"3,3",
-    "sanitation":"10,3",
-    "education":"3,1",
-    "pollution":"21,3"
+    "poverty":"61,5"
   },
   {
     "country":"Chile",
-    "poverty":"61,2",
-    "discrimination":"5,9",
-    "sanitation":"5,5",
-    "education":"21",
-    "pollution":"5,8"
+    "poverty":"61,2"
   },
   {
     "country":"China",
-    "poverty":"42,5",
-    "discrimination":"5,1",
-    "sanitation":"8,5",
-    "education":"12,1",
-    "pollution":"21,6"
+    "poverty":"42,5"
   },
   {
     "country":"Taiwan",
-    "poverty":"39,9",
-    "discrimination":"3,5",
-    "sanitation":"10,4",
-    "education":"6,1",
-    "pollution":"36,2"
+    "poverty":"39,9"
   },
   {
     "country":"Colombia",
-    "poverty":"56,8",
-    "discrimination":"14",
-    "sanitation":"2,1",
-    "education":"13,6",
-    "pollution":"13,5"
+    "poverty":"56,8"
   },
   {
     "country":"Cyprus",
-    "poverty":"57,3",
-    "discrimination":"6,3",
-    "sanitation":"18,7",
-    "education":"5,8",
-    "pollution":"11,9"
+    "poverty":"57,3"
   },
   {
     "country":"Ecuador",
-    "poverty":"43",
-    "discrimination":"8,8",
-    "sanitation":"6,9",
-    "education":"18",
-    "pollution":"23,1"
+    "poverty":"43"
   },
   {
     "country":"Estonia",
-    "poverty":"60,3",
-    "discrimination":"2,8",
-    "sanitation":"10",
-    "education":"5,9",
-    "pollution":"20,2"
+    "poverty":"60,3"
   },
   {
     "country":"Georgia",
-    "poverty":"73,1",
-    "discrimination":"5,2",
-    "sanitation":"8,2",
-    "education":"4,7",
-    "pollution":"7,7"
+    "poverty":"73,1"
   },
   {
     "country":"Palestine",
-    "poverty":"68,9",
-    "discrimination":"5,4",
-    "sanitation":"6,7",
-    "education":"8,4",
-    "pollution":"9,7"
+    "poverty":"68,9"
   },
   {
     "country":"Germany",
-    "poverty":"55,8",
-    "discrimination":"7,6",
-    "sanitation":"6,5",
-    "education":"19,3",
-    "pollution":"10,3"
+    "poverty":"55,8"
   },
   {
     "country":"Ghana",
-    "poverty":"58,5",
-    "discrimination":"6",
-    "sanitation":"14,2",
-    "education":"16,8",
-    "pollution":"4,5"
+    "poverty":"58,5"
   },
   {
     "country":"Hong Kong",
-    "poverty":"35,3",
-    "discrimination":"5",
-    "sanitation":"21,6",
-    "education":"12,1",
-    "pollution":"25,6"
+    "poverty":"35,3"
   },
   {
     "country":"India",
-    "poverty":"52,4",
-    "discrimination":"17,9",
-    "sanitation":"6,1",
-    "education":"13,7",
-    "pollution":"9,4"
+    "poverty":"52,4"
   },
   {
     "country":"Iraq",
-    "poverty":"60,8",
-    "discrimination":"5,8",
-    "sanitation":"7,5",
-    "education":"12,8",
-    "pollution":"12,2"
+    "poverty":"60,8"
   },
   {
     "country":"Japan",
-    "poverty":"36,6",
-    "discrimination":"0,7",
-    "sanitation":"7,2",
-    "education":"8,1",
-    "pollution":"41,3"
+    "poverty":"36,6"
   },
   {
     "country":"Kazakhstan",
-    "poverty":"62,6",
-    "discrimination":"3,4",
-    "sanitation":"11,8",
-    "education":"8",
-    "pollution":"14,2"
+    "poverty":"62,6"
   },
   {
     "country":"Jordan",
-    "poverty":"80,7",
-    "discrimination":"2,5",
-    "sanitation":"5,2",
-    "education":"7",
-    "pollution":"4,2"
+    "poverty":"80,7"
   },
   {
     "country":"South Korea",
-    "poverty":"42,3",
-    "discrimination":"6,3",
-    "sanitation":"7,4",
-    "education":"4",
-    "pollution":"39,5"
+    "poverty":"42,3"
   },
   {
     "country":"Kuwait",
-    "poverty":"49,1",
-    "discrimination":"5,4",
-    "sanitation":"13,3",
-    "education":"21,7",
-    "pollution":"7,3"
+    "poverty":"49,1"
   },
   {
     "country":"Kyrgyzstan",
-    "poverty":"54",
-    "discrimination":"11,6",
-    "sanitation":"13,4",
-    "education":"8,7",
-    "pollution":"12,3"
+    "poverty":"54"
   },
   {
     "country":"Lebanon",
-    "poverty":"48",
-    "discrimination":"7,2",
-    "sanitation":"17",
-    "education":"15,2",
-    "pollution":"11,5"
+    "poverty":"48"
   },
   {
     "country":"Libya",
-    "poverty":"29,2",
-    "discrimination":"3,7",
-    "sanitation":"28",
-    "education":"26,5",
-    "pollution":"11"
+    "poverty":"29,2"
   },
   {
     "country":"Malaysia",
-    "poverty":"44,1",
-    "discrimination":"10,9",
-    "sanitation":"12,4",
-    "education":"16,2",
-    "pollution":"16,5"
+    "poverty":"44,1"
   },
   {
     "country":"Mexico",
-    "poverty":"44,4",
-    "discrimination":"14,1",
-    "sanitation":"5",
-    "education":"15,4",
-    "pollution":"20,3"
+    "poverty":"44,4"
   },
   {
     "country":"Morocco",
-    "poverty":"62",
-    "discrimination":"5,6",
-    "sanitation":"6,5",
-    "education":"17,6",
-    "pollution":"6,9"
+    "poverty":"62"
   },
   {
     "country":"Netherlands",
-    "poverty":"64,2",
-    "discrimination":"11,6",
-    "sanitation":"7,8",
-    "education":"5,6",
-    "pollution":"10,3"
+    "poverty":"64,2"
   },
   {
     "country":"New Zealand",
-    "poverty":"53,4",
-    "discrimination":"3,2",
-    "sanitation":"9",
-    "education":"15,5",
-    "pollution":"14"
+    "poverty":"53,4"
   },
   {
     "country":"Nigeria",
-    "poverty":"79,9",
-    "discrimination":"8,2",
-    "sanitation":"5,3",
-    "education":"5,4",
-    "pollution":"1,2"
+    "poverty":"79,9"
   },
   {
     "country":"Pakistan",
-    "poverty":"62,6",
-    "discrimination":"20,5",
-    "sanitation":"7,8",
-    "education":"8,6",
-    "pollution":"0,4"
+    "poverty":"62,6"
   },
   {
     "country":"Peru",
-    "poverty":"48",
-    "discrimination":"7,4",
-    "sanitation":"3,8",
-    "education":"22,1",
-    "pollution":"18"
+    "poverty":"48"
   },
   {
     "country":"Philippines",
-    "poverty":"54,8",
-    "discrimination":"5,5",
-    "sanitation":"9,8",
-    "education":"13,5",
-    "pollution":"16,3"
+    "poverty":"54,8"
   },
   {
     "country":"Poland",
-    "poverty":"76,5",
-    "discrimination":"2,7",
-    "sanitation":"4,3",
-    "education":"4,2",
-    "pollution":"11,1"
+    "poverty":"76,5"
   },
   {
     "country":"Qatar",
-    "poverty":"52,8",
-    "discrimination":"2,6",
-    "sanitation":"17,2",
-    "education":"8,3",
-    "pollution":"18,8"
+    "poverty":"52,8"
   },
   {
     "country":"Romania",
-    "poverty":"52",
-    "discrimination":"7",
-    "sanitation":"13,7",
-    "education":"17,3",
-    "pollution":"8,7"
+    "poverty":"52"
   },
   {
     "country":"Russia",
-    "poverty":"55,7",
-    "discrimination":"3,7",
-    "sanitation":"9,9",
-    "education":"5,3",
-    "pollution":"22,7"
+    "poverty":"55,7"
   },
   {
     "country":"Rwanda",
-    "poverty":"60,4",
-    "discrimination":"14,2",
-    "sanitation":"19,3",
-    "education":"3,3",
-    "pollution":"2,8"
+    "poverty":"60,4"
   },
   {
     "country":"Singapore",
-    "poverty":"53,5",
-    "discrimination":"11,1",
-    "sanitation":"15,3",
-    "education":"7,9",
-    "pollution":"12,1"
+    "poverty":"53,5"
   },
   {
     "country":"Slovenia",
-    "poverty":"68,4",
-    "discrimination":"3,3",
-    "sanitation":"4,3",
-    "education":"4,3",
-    "pollution":"17,9"
+    "poverty":"68,4"
   },
   {
     "country":"South Africa",
-    "poverty":"57,4",
-    "discrimination":"17,3",
-    "sanitation":"12,7",
-    "education":"8,8",
-    "pollution":"3,8"
+    "poverty":"57,4"
   },
   {
     "country":"Zimbabwe",
-    "poverty":"57,4",
-    "discrimination":"8,1",
-    "sanitation":"20,6",
-    "education":"11,1",
-    "pollution":"2,8"
+    "poverty":"57,4"
   },
   {
     "country":"Spain",
-    "poverty":"71,6",
-    "discrimination":"8,4",
-    "sanitation":"6,1",
-    "education":"8,7",
-    "pollution":"5,2"
+    "poverty":"71,6"
   },
   {
     "country":"Sweden",
-    "poverty":"55,1",
-    "discrimination":"9",
-    "sanitation":"7,9",
-    "education":"6,7",
-    "pollution":"20,3"
+    "poverty":"55,1"
   },
   {
     "country":"Thailand",
-    "poverty":"46,8",
-    "discrimination":"11,8",
-    "sanitation":"11,9",
-    "education":"12,4",
-    "pollution":"16,9"
+    "poverty":"46,8"
   },
   {
     "country":"Trinidad and Tobago",
-    "poverty":"59,2",
-    "discrimination":"7,7",
-    "sanitation":"10,1",
-    "education":"11,5",
-    "pollution":"10,9"
+    "poverty":"59,2"
   },
   {
     "country":"Tunisia",
-    "poverty":"84,6",
-    "discrimination":"1,9",
-    "sanitation":"3,2",
-    "education":"5,6",
-    "pollution":"4,1"
+    "poverty":"84,6"
   },
   {
     "country":"Turkey",
-    "poverty":"51,6",
-    "discrimination":"12",
-    "sanitation":"7,6",
-    "education":"22,8",
-    "pollution":"4,1"
+    "poverty":"51,6"
   },
   {
     "country":"Ukraine",
-    "poverty":"63,4",
-    "discrimination":"3,3",
-    "sanitation":"12,1",
-    "education":"2,3",
-    "pollution":"19"
+    "poverty":"63,4"
   },
   {
     "country":"Egypt",
-    "poverty":"81,5",
-    "discrimination":"2,2",
-    "sanitation":"5,9",
-    "education":"8,1",
-    "pollution":"2,2"
+    "poverty":"81,5"
   },
   {
     "country":"United States",
-    "poverty":"53,1",
-    "discrimination":"4",
-    "sanitation":"13",
-    "education":"18,9",
-    "pollution":"9,9"
+    "poverty":"53,1"
   },
   {
     "country":"Uruguay",
-    "poverty":"56,9",
-    "discrimination":"12,7",
-    "sanitation":"5,2",
-    "education":"14,7",
-    "pollution":"9,4"
+    "poverty":"56,9"
   },
   {
     "country":"Uzbekistan",
-    "poverty":"40,6",
-    "discrimination":"4,4",
-    "sanitation":"25",
-    "education":"5,7",
-    "pollution":"21,8"
+    "poverty":"40,6"
   },
   {
     "country":"Yemen",
-    "poverty":"74,3",
-    "discrimination":"1,8",
-    "sanitation":"5,7",
-    "education":"13,4",
-    "pollution":"3,6"
+    "poverty":"74,3"
   }
 ]
