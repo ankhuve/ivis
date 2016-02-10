@@ -26,10 +26,13 @@ body{
     height: 100vh;
     float: right;
     background: #191c1a;
+    -webkit-box-shadow: inset 10px 0 20px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: inset 10px 0 20px rgba(0, 0, 0, 0.15);
+    box-shadow: inset 10px 0 20px rgba(0, 0, 0, 0.15);
 }
 
 #currentCountry, #questionValue{
-    margin-left: 20px;
+    margin-left: 30px;
     margin-bottom: 10px;
 }
 
@@ -72,7 +75,7 @@ path.country{
 .infoButton{
     position: absolute;
     bottom: 20px;
-    left: 20px;
+    left: 30px;
     line-height: 40px;
     cursor: pointer;
 }
