@@ -15,6 +15,35 @@
 	</head>
 
 	<body>
+    <div id="modalBg" onclick="closeModal();">
+
+    </div>
+    <div id="modal">
+        <h1>Analytical trails</h1>
+        <div class="awesomeGrid two-thirds">
+            <h2 class="orange">Trail one</h2>
+            <p>I started by going to the WVS-website to find something interesting, and the question that caught my eye was “What is the most serious problem in the world?”. Using the online tool WVS provide was quite a pain as it was slow and it was really hard to clearly and easily see the data I was interested in.</p>
+            <h2 class="orange">Trail two</h2>
+            <p>The question had several categories but I decided to only focus on poverty, which was the most common answer by nearly all countries in the survey. This was done by exporting the data from WVS and then processing it with Excel and my text editor, PHPStorm, to get the data that I wanted.
+            </p>
+            <p>Using D3.js, I created a world map and bound the data to the countries, using different color codings to visualize the extent to which the countries considered poverty to the the biggest problem in the world. By hovering the mouse over the countries, details about the country is displayed in a side panel. One can also zoom in the map and move around using the mouse scroll and by clicking and dragging.
+            </p>
+            <p>To filter the visualization, I added a slider with two stops. The stops represent the lower and upper bound of the percentage for each country.</p>
+            <p>I thought that it would be interesting to see how poor countries answer the question, if maybe poor countries consider poverty to be a bigger problem than richer countries. To do this, I took data from Gapminder, namely GDP/capita (which had data for most countries). I bound this data to each country in the map and display it in the side bar when hovering over the country. However, I could not find a linear correlation between the two variables.</p>
+            <p>I have learned a lot about D3.js and look forward to learning more!</p>
+        </div>
+        <div class="awesomeGrid one-third">
+            <img src="img/analtrail_1.png">
+            <p>First step in the process.</p>
+            <img src="img/analtrail_2.png">
+            <p>Processing data.</p>
+            <img src="img/analtrail_3.png">
+            <p>Creating a map.</p>
+            <img src="img/analtrail_4.png">
+            <p>And a sidebar.</p>
+        </div>
+    </div>
+
 		<div id="chartContainer"></div>
         <div id="statContainer">
             <div id="slideContainer">
@@ -23,6 +52,8 @@
                         <h1>Hover over the map for more info</h1>
                         <h2><span class="green">Green</span> countries represent those who consider <span class="lightGray">poverty</span> to be a big problem in the world.</h2>
                         <h2><span class="orange">Orange</span> countries do not consider <span class="lightGray">poverty</span> to be a big problem.</h2>
+                        <h2>The <span class="lightGray">percentage</span> is the amount of population who consider <span class="lightGray">poverty</span> to be the biggest problem in the world.</h2>
+                        <h2><span class="lightGray">Scroll</span> to zoom, <span class="lightGray">click and drag</span> to move around.</h2>
                     </div>
                 </div>
                 <div class="infoSlide">
@@ -30,16 +61,17 @@
                 </div>
             </div>
             <div id="filterContainer">
+                <h3>Slide to change the boundaries on the map based on poverty data</h3>
                 <div id="filterValues">
                     <span id="lowVal">0%</span>
                     <span id="highVal">100%</span>
                 </div>
 
                 <div id="filterValueSlider"></div>
-                <button id="dataSwitcher" onclick="filterData( document.getElementById( 'filterValue' ).value )">Switch data</button>
+                <!--<button id="dataSwitcher" onclick="toggleData()">Switch data</button>-->
             </div>
             <div class="infoButton">
-                <div id="modalToggle">i</div>
+                <div id="modalToggle" onclick="modalToggle()">i</div>
                 <div class="arrowLeft"></div><div class="explanatoryBox">
                     Click for analytical trail
                 </div>

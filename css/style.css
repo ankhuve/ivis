@@ -178,6 +178,11 @@ path.country{
     font-weight: 300;
 }
 
+#filterContainer h3{
+    font-weight: 400;
+    text-align: center;
+}
+
 #filterContainer #lowVal{
     position: relative;
     padding-left: 15%;
@@ -239,10 +244,109 @@ button:active{
     fill: #4c524d !important;
 }
 
+#modalBg{
+    display: none;
+    z-index: 90;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0);
+    height: 100vh;
+    width: 100vw;
+    /*-webkit-transition: all 0.3s;*/
+    /*-moz-transition: all 0.3s;*/
+    /*-ms-transition: all 0.3s;*/
+    /*-o-transition: all 0.3s;*/
+    /*transition: all 0.3s;*/
+}
+
+#modal{
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    position: absolute;
+    -webkit-transform: translateY(-100vh);
+    -moz-transform: translateY(-100vh);
+    -ms-transform: translateY(-100vh);
+    -o-transform: translateY(-100vh);
+    transform: translateY(-100vh);
+    top: 15vh;
+    left: 15vw;
+    margin: 0 auto;
+    z-index: 100;
+    background: #1f2220;
+    padding: 2vh 2vw;
+    width: 66vw;
+    height: 60vh;
+    border-radius: 10px;
+    border-bottom: solid #ff8331 3px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+}
+
+#modal h1{
+    font-family: "Oswald", serif;
+    border-bottom: solid 2px #3E3732;
+    padding-bottom: 1vh;
+    margin-top: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #ff8331;
+    font-size: 1.6rem;
+}
+
+#modal h2{
+    font-weight: 300;
+}
+
+.awesomeGrid{
+    float: left;
+    display: inline-block;
+}
+
+.awesomeGrid img{
+    width: 100%;
+}
+
+.half{
+    width: 50%;
+}
+
+.two-thirds{
+    width: 66.666666667%;
+}
+
+.one-third{
+    width: 33.33333333%;
+}
+
 *{
     -webkit-transition: background 0.2s, color 0.2s, box-shadow 0.2s, fill 0.2s;
     -moz-transition: background 0.2s, color 0.2s, box-shadow 0.2s, fill 0.2s;
     -ms-transition: background 0.2s, color 0.2s, box-shadow 0.2s, fill 0.2s;
     -o-transition: background 0.2s, color 0.2s, box-shadow 0.2s, fill 0.2s;
     transition: background 0.2s, color 0.2s, box-shadow 0.2s, fill 0.2s;
+}
+
+::-webkit-scrollbar
+{
+    width: 12px;  /* for vertical scrollbars */
+    height: 12px; /* for horizontal scrollbars */
+}
+
+::-webkit-scrollbar-track
+{
+    background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb
+{
+    background: rgba(0, 0, 0, 0.5);
 }
