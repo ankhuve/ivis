@@ -1,6 +1,6 @@
 var chartContainerId = "chartContainer";
 
-//d3.select(window).on("resize", throttle);
+d3.select(window).on("resize", throttle);
 
 var zoom = d3.behavior.zoom()
     .scaleExtent([1, 20])
@@ -14,6 +14,7 @@ var topo,
     path,
     svg,
     question,
+    gapminderData,
     g;
 
 var tooltip = d3.select("#currentInfo").append("h1").attr("class", "tooltip hidden").attr("id", "currentCountry");
@@ -39,18 +40,44 @@ function setup(width,height){
     g = svg.append("g");
 
     d3.json("data/world-topo.json", function(error, world) {
+        if( error ){ console.log( error )}
+        else{
+            var topo = topojson.feature(world, world.objects.countries).features;
 
-        var topo = topojson.feature(world, world.objects.countries).features;
+            // set WVS data
+            d3.json("data/data.json", function(error, question) {
+                if( error ){ console.log( error )}
+                else{
+                    setQuestionData( question );
 
-        d3.json("data/data.json", function(error, question) {
-            setQuestionData( question );
-            draw( topo );
-        });
+                    // set gapminder data
+                    d3.csv("data/gdp_per_capita.csv", function(error, gapminder ) {
+                        if( error ){ console.log( error )}
+                        else{
+                            setGapminderData( gapminder );
+                            draw( topo );
+                        }
+
+                    });
+                }
+
+
+
+            });
+        }
+
+
+
+
     });
 }
 
 function setQuestionData( d ){
     question = d;
+}
+
+function setGapminderData( d ){
+    gapminderData = d;
 }
 
 var topValue = 0;
@@ -71,17 +98,34 @@ function createColorScale( ) {
         .range( ["#B56A49", "#5dac57"] );
 }
 
-function addQuestionDataToCountries( ){
+var tempSelector,
+    current;
+function addQuestionDataToCountries(){
 
     for( var k = 1; k < question.length; k++ ){
         topValue = parseFloat( question[k].poverty.replace( ",", "." ));
-        var tempSelector = "#" + question[k].country.replace( " ", "" );
-        var current = d3.selectAll( tempSelector );
+        tempSelector = "#" + question[k].country.replace( " ", "" );
+        current = d3.selectAll( tempSelector );
         current.attr("qData", function (){
                 return parseFloat( question[k].poverty.replace( ",", "." ) );
             })
             .style( "fill", function(){ return color(parseFloat( question[k].poverty.replace( ",", "." ))) })
             .classed( "active", true );
+    }
+
+    for( var i = 0; i < gapminderData.length; i++ ){
+        //topValue = parseFloat( gapminderData[i].gdpPerCapita );
+        tempSelector = "#" + gapminderData[i].Country.replace( " ", "" );
+        if( gapminderData[i].gdpPerCapita ){
+            console.log( gapminderData[i] );
+            current = d3.selectAll( tempSelector );
+            current.attr( "gData", function (){
+                    return parseFloat( gapminderData[i].gdpPerCapita );
+                })
+                .style( "fill", function(){ return "red" })
+                .classed( "active", true );
+        }
+
     }
 }
 
@@ -136,10 +180,9 @@ function filterData( lowVal, highVal ){
         })
         .classed( "fadedCountry", false );
 
-    console.log( lowVal, highVal );
-    var countriesOutsideRange = countriesWithData.filter( function(){ return this.getAttribute( "qData" ) < lowVal || this.getAttribute( "qData" ) > highVal })
+    // Fade the countries outside the range
+    countriesWithData.filter( function(){ return this.getAttribute( "qData" ) < lowVal || this.getAttribute( "qData" ) > highVal })
         .classed( "fadedCountry", true );
-    console.log( countriesOutsideRange );
 
 }
 
@@ -178,8 +221,8 @@ function move() {
 
 // for resizing
 function redraw() {
-    width = window.innerWidth-10;
-    height = window.innerHeight-10;
+    width = document.getElementById( "chartContainer" ).offsetWidth;
+    height = window.innerHeight-5;
     d3.select('svg').remove();
     setup(width,height);
     draw(topo);
