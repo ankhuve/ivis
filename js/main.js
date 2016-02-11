@@ -16,8 +16,8 @@ var topo,
     question,
     g;
 
-var tooltip = d3.select("#statContainer").append("h1").attr("class", "tooltip hidden").attr("id", "currentCountry");
-var valueContainer = d3.select("#statContainer").append("h2").attr("class", "tooltip hidden").attr("id", "questionValue");
+var tooltip = d3.select("#currentInfo").append("h1").attr("class", "tooltip hidden").attr("id", "currentCountry");
+var valueContainer = d3.select("#currentInfo").append("h2").attr("class", "tooltip hidden").attr("id", "questionValue");
 
 setup(width,height);
 
@@ -93,22 +93,23 @@ function draw( topo ) {
         .attr("class", "country")
         .attr("d", path)
         .attr("id", function( d ) { return d.properties.name.replace( " ", "" ); });
-    createColorScale();
-    addQuestionDataToCountries();
 
-    //offsets plus width/height of transform, plus 20 px of padding, plus 20 extra for tooltip offset off mouse
-    var offsetL = width / 2 + 20;
-    var offsetT = document.getElementById(chartContainerId).offsetTop+(height/2)+140;
+    createColorScale();
+    createSlider();
+    addQuestionDataToCountries();
 
     //tooltips
     country
         .on("mouseenter", function(d){
             if ( this.getAttribute( "qData" ) ){
+                var currentCountry = this;
+                //var currentCountryColor = window.getComputedStyle( currentCountry ).getPropertyValue( "fill" );
 
-
+                d3.selectAll( ".infoSlide").classed( "getOutOfHere", true );
                 tooltip.classed("hidden", false).html(d.properties.name);
                 valueContainer.classed("hidden", false);
-                valueContainer.html(( this.getAttribute( "qData" ) ? this.getAttribute( "qData" ) + " %" : "Country has no data" ));
+                valueContainer.html(( this.getAttribute( "qData" ) ? this.getAttribute( "qData" ) + " %" : "Country has no data" ))
+                    .style( "color", function(){ return color( parseFloat( currentCountry.getAttribute( "qData" )) )} );
 
             }
         })
@@ -118,9 +119,47 @@ function draw( topo ) {
             }
             tooltip.classed("hidden", true);
             valueContainer.classed("hidden", true);
+            d3.selectAll( ".infoSlide").classed( "getOutOfHere", false );
 
         });
+}
 
+var toggled = true;
+function filterData( lowVal, highVal ){
+    toggled = !toggled;
+
+    var countriesWithData = d3.selectAll( ".active" );
+    countriesWithData
+        .filter( function(){ return this.getAttribute( "qData" ) > lowVal && this.getAttribute( "qData" ) < highVal } )
+        .style( "fill", function(){
+            return color( this.getAttribute( "qData" ))
+        })
+        .classed( "fadedCountry", false );
+
+    console.log( lowVal, highVal );
+    var countriesOutsideRange = countriesWithData.filter( function(){ return this.getAttribute( "qData" ) < lowVal || this.getAttribute( "qData" ) > highVal })
+        .classed( "fadedCountry", true );
+    console.log( countriesOutsideRange );
+
+}
+
+function createSlider(){
+    $(function() {
+        var jqSlider = $( "#filterValueSlider" );
+        jqSlider.slider({
+            range: true,
+            min: 0,
+            max: 100,
+            values: [ botValue, topValue ],
+            slide: function( event, ui ) {
+                filterData( ui.values[ 0 ], ui.values[ 1 ] );
+                $( "#lowVal" ).html( jqSlider.slider( "values", 0 ) + " %");
+                $( "#highVal" ).html( jqSlider.slider( "values", 1 ) + " %");
+            }
+        });
+        $( "#lowVal" ).html( jqSlider.slider( "values", 0 ) + " %");
+        $( "#highVal" ).html( jqSlider.slider( "values", 1 ) + " %");
+    });
 }
 
 function move() {

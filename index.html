@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 	<head>
-		<title>IVIS16 Assignment 1</title>
+		<title>IVIS16 Assignment 2</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<script src="node_modules/d3/d3.min.js" charset="utf-8"></script>
 		<script src="node_modules/topojson/build/topojson.min.js"></script>
+		<script src="js/jquery-2.2.0.min.js"></script>
+		<script src="node_modules/jquery-ui/jquery-ui.js"></script>
 		<link rel="stylesheet" type="text/css" href="css/normalize.min.css">
+		<link rel="stylesheet" type="text/css" href="node_modules/jquery-ui/themes/eggplant/jquery-ui.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 
 	</head>
@@ -14,6 +17,27 @@
 	<body>
 		<div id="chartContainer"></div>
         <div id="statContainer">
+            <div id="slideContainer">
+                <div class="infoSlide">
+                    <div id="infoTextTutorial">
+                        <h1>Hover over the map for more info</h1>
+                        <h2><span class="green">Green</span> countries represent those who consider <span class="lightGray">poverty</span> to be a big problem in the world.</h2>
+                        <h2><span class="orange">Orange</span> countries do not consider <span class="lightGray">poverty</span> to be a big problem.</h2>
+                    </div>
+                </div>
+                <div class="infoSlide">
+                    <div id="currentInfo"></div>
+                </div>
+            </div>
+            <div id="filterContainer">
+                <div id="filterValues">
+                    <span id="lowVal">0%</span>
+                    <span id="highVal">100%</span>
+                </div>
+
+                <div id="filterValueSlider"></div>
+                <button id="dataSwitcher" onclick="filterData( document.getElementById( 'filterValue' ).value )">Switch data</button>
+            </div>
             <div class="infoButton">
                 <div id="modalToggle">i</div>
                 <div class="arrowLeft"></div><div class="explanatoryBox">

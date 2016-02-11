@@ -20,6 +20,7 @@ body{
 }
 
 #statContainer{
+    overflow: hidden;;
     position: relative;
     display: inline-block;
     width: 30%;
@@ -72,6 +73,14 @@ path.country{
     display: none;
 }
 
+.getOutOfHere{
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+
 .infoButton{
     position: absolute;
     bottom: 20px;
@@ -118,6 +127,109 @@ path.country{
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
+}
+
+#slideContainer{
+    width: 200%;
+    margin-top: 15%;
+}
+
+#slideContainer .infoSlide{
+    padding: 0 2%;
+    width: 46%;
+    display: inline-block;
+    float: left;
+    overflow: hidden;
+    color: #343a35;
+    text-align: center;
+    -webkit-transition: transform 0.2s;
+    -moz-transition: transform 0.2s;
+    -ms-transition: transform 0.2s;
+    -o-transition: transform 0.2s;
+    transition: transform 0.2s;
+}
+
+.infoSlide h1{
+    color: #6c906b;
+}
+.infoSlide h2{
+    font-weight: 500;
+}
+
+#filterContainer{
+    position: absolute;
+    bottom: 20%;
+    padding: 0 5%;
+    /*margin-top: 30%;*/
+    float: right;
+    width: 90%;
+}
+
+#filterValueSlider{
+    margin: 0 auto;
+    width: 70%;
+}
+
+#filterValues{
+    width: 100%;
+    font-weight: 300;
+}
+
+#filterContainer #lowVal{
+    position: relative;
+    padding-left: 15%;
+}
+#filterContainer #highVal{
+    position: relative;
+    float: right;
+    padding-right: 15%;
+}
+
+button{
+    background: #1f2220;
+    text-transform: uppercase;
+    font-weight: 500;
+    border: none;
+    padding: 0.8rem 1rem;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border-bottom: solid 3px;
+    outline: none;
+    -webkit-transition: border 0.04s, background 0.1s;
+    -moz-transition: border 0.04s, background 0.1s;
+    -ms-transition: border 0.04s, background 0.1s;
+    -o-transition: border 0.04s, background 0.1s;
+    transition: border 0.04s, background 0.1s;
+}
+
+button:hover{
+    background: #303331;
+}
+
+button:active{
+    background: #262927;
+    border: solid 0px;
+}
+
+#dataSwitcher{
+    margin-top: 40px;
+}
+
+.green{
+    color: #5dac57 !important;
+}
+
+.orange{
+    color: #B56A49 !important;
+}
+
+.lightGray{
+    color: #555b56 !important;
+}
+
+.fadedCountry{
+    fill: #404641 !important;
 }
 
 *{
